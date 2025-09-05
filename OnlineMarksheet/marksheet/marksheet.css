@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-left: 25%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+
+}
+#container{
+    border: 1px dashed rgb(5, 5, 85);
+    border-width: 4px;
+    height: 90%;
+    width:70%;
+    padding: 30px;
+    background-color: rgb(173, 223, 206);
+    background-image: url('./bg-logo1.png'),linear-gradient(rgb(255, 255, 255));
+    /* background-color: transparent; */
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainContainer{
+    
+}
+#no{
+    padding-top: 50px;
+    font-size: 20px;
+    gap: 250px;
+    display: flex;
+    flex-direction: row;
+}
+#logo{
+    width: 140px;
+    height: 140px;
+}
+#Profile{
+    width: 100px;
+    height: 120px;
+}
+#header{
+    padding: 30px;
+    display: flex; 
+    flex-direction: row;
+    text-align: center;
+    color: rgb(19, 19, 131);
+    justify-content: space-between;
+}
+#headcontent{
+    line-height: 26px;
+}
+table {
+      width: 100%;
+      border-collapse: collapse;
+      /* background-image: linear-gradient(rgb(109, 85, 121,0.2)); */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #410658;
+      padding: 10px;
+      text-align: center;
+    }
+.no-border td {
+  border-bottom: none;
+  padding: 16px;
+}
+.no-border + tr td {
+  border-top: none;
+}
+#text td{
+    text-align:center; 
+    font-weight:bold; 
+    margin-top:10px;
+    border-left: 0;
+    border-right: 0;
+    padding-bottom: 200px;
+}
+#txt td{
+    text-align:center; 
+    font-weight:bold; 
+    margin-top:10px;
+    border-left: 0;
+    border-right: 0;
+}
+#footer{
+    padding-top: 10px;
+    height: 80px;
+    background-color: rgb(125, 125, 151,0.4);
+    font-weight: bold;
+    color: rgb(35, 35, 131);
+    display: flex;
+    justify-content: space-between;
+}
+#signature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    font-weight: bold;
+}
+#one{
+    color: orange;
+}
+#img{
+    height:90px;
+    width: 90px;
+}
+#container{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+

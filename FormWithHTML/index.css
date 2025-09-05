@@ -1,0 +1,32 @@
+  h1{
+      text-align: center;
+    }
+    body { margin:0; font-family:sans-serif; }
+    .sidebar { position:fixed; left:0; top:0; width:220px; height:100vh; background:#333; color:#fff; padding:1em; }
+    .sidebar nav a { display:block; color:#ccc; text-decoration:none; margin:0.5em 0; }
+    .sidebar nav a:hover { color:#fff; }
+    .main { margin-left:220px; padding:2em; }
+    .grid { 
+        display:grid; 
+        grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); 
+        gap:1em; }
+    .card { background:#f9f9f9; padding:1em; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+
+ .grid-2 { 
+        display:flex; 
+        flex-direction:column;
+    }
+    .nav{
+        margin-top: 250px;
+        color: palevioletred;
+    }
+    h2{
+        color:aqua;
+    }
+    h3{
+        color:white;
+    }
+    button{
+        size: 200px;
+        background-color: chartreuse;
+    }
