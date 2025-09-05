@@ -1,32 +1,80 @@
-  h1{
+    h1 {
       text-align: center;
+      color: #0C1596;
     }
-    body { margin:0; font-family:sans-serif; }
-    .sidebar { position:fixed; left:0; top:0; width:220px; height:100vh; background:#333; color:#fff; padding:1em; }
-    .sidebar nav a { display:block; color:#ccc; text-decoration:none; margin:0.5em 0; }
-    .sidebar nav a:hover { color:#fff; }
-    .main { margin-left:220px; padding:2em; }
-    .grid { 
-        display:grid; 
-        grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); 
-        gap:1em; }
-    .card { background:#f9f9f9; padding:1em; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
-
- .grid-2 { 
-        display:flex; 
-        flex-direction:column;
+    body { 
+      background-color:#E3EBDF;
+      margin:0; 
+      font-family:sans-serif; 
+    }
+    legend{
+        color:red;
+    }
+    select{
+        height: 20px;
+    }
+    .sidebar { 
+      position:fixed; 
+      left:0; 
+      top:0; 
+      width:220px; 
+      height:100vh; 
+      background:#4f0c0c; 
+      color:#fff; 
+      padding:1em; 
+    }
+    .main { 
+      margin-left:280px; 
+      overflow-y: hidden;
+      padding:0em; 
+    }
+   
+    fieldset {
+      background-color: #e3f1db;
+      width: 70%;
+      min-width: 280px;
+      padding: 1em;
+      border-radius: 8px;
+    }
+    .grid-2 { 
+      display:flex; 
+      flex-direction:column;
+    }
+    .fields{
+        margin: auto;
+        padding: 10px;
+        padding-left: 250px;
     }
     .nav{
-        margin-top: 250px;
-        color: palevioletred;
+      margin-top: 250px;
+      color: rgb(235, 161, 186);
     }
     h2{
-        color:aqua;
+      color:aqua;
     }
     h3{
-        color:white;
+      color:rgb(233, 202, 202);
     }
-    button{
-        size: 200px;
-        background-color: chartreuse;
+    .buttons {
+      padding-left: 380px;
+      gap: 1em;
+      margin-top: 1em;
+    }
+  
+    .submit-btn {
+      background-color: chartreuse;
+      padding : 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    .cancel-btn {
+      background-color: crimson;
+      color: white;
+      padding : 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
     }

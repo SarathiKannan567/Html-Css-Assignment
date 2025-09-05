@@ -3,74 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
   <title>Web App Dashboard</title>
-  <style>
-    h1 {
-      text-align: center;
-    }
-    body { 
-      margin:0; 
-      font-family:sans-serif; 
-    }
-    .sidebar { 
-      position:fixed; 
-      left:0; 
-      top:0; 
-      width:220px; 
-      height:100vh; 
-      background:#333; 
-      color:#fff; 
-      padding:1em; 
-    }
-    .main { 
-      margin-left:280px; 
-      overflow-y: hidden;
-      padding:0em; 
-    }
-    .form-container {
-      display: flex;
-      gap: 2em;
-    }
-    fieldset {
-      width: 45%;
-      min-width: 280px;
-      padding: 1em;
-      border-radius: 8px;
-    }
-    .grid-2 { 
-      display:flex; 
-      flex-direction:column;
-    }
-    .nav{
-      margin-top: 250px;
-      color: palevioletred;
-    }
-    h2{
-      color:aqua;
-    }
-    h3{
-      color:white;
-    }
-    .buttons {
-      display: flex;
-      gap: 1em;
-      margin-top: 1em;
-    }
-    button{
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 15px;
-    }
-    .submit-btn {
-      background-color: chartreuse;
-    }
-    .cancel-btn {
-      background-color: crimson;
-      color: white;
-    }
-  </style>
 </head>
 <body>
   <aside class="sidebar">
@@ -84,70 +18,81 @@
   <main class="main">
     <h1>Dashboard</h1>
     <form>
-      <div class="form-container">
+      <div class="fields">
         <fieldset class="grid-2">
           <legend>Personal Details</legend>
           <label for="fname">First Name:</label>
-          <input type="text" id="fname" name="first_name" required>
+          <input type="text" id="fname" name="first_name" placeholder="First Name" required><br/>
           
           <label for="lname">Last Name:</label>
-          <input type="text" id="lname" name="last_name" required>
+          <input type="text" id="lname" name="last_name" placeholder="Last Name"><br/>
           
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" placeholder="E-Mail"><br/>
           
           <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone">
+          <input type="tel" id="phone" name="phone" placeholder="Phone No."><br/>
         
           <label for="dob">Date of Birth:</label>
-          <input type="date" id="dob" name="dob">
+          <input type="date" id="dob" name="dob"><br/>
         </fieldset>
+        </div>
   
+    <div class="fields">
         <fieldset class="grid-2">
           <legend>Other Details</legend>
           <label for="address">Address:</label>
-          <input type="text" id="address" name="address">
+          <input type="text" id="address" name="address" placeholder="Address"><br/>
           
           <label for="city">City:</label>
-          <input type="text" id="city" name="city">
+          <input type="text" id="city" name="city" placeholder="City"><br/>
           
           <label for="state">State:</label>
-          <input type="text" id="state" name="state">
+          <input type="text" id="state" name="state" placeholder="State"><br/>
           
           <label for="country">Country:</label>
-          <input type="text" id="country" name="country">
+          <input type="text" id="country" name="country" placeholder="Country"><br/>
           
           <label for="zip">Zip Code:</label>
-          <input type="text" id="zip" name="zip">
+          <input type="text" id="zip" name="zip" placeholder="Zip Code"><br/>
         </fieldset>
-      </div>
-
+    </div>
+      <div class="fields">
       <fieldset class="grid-2">
         <legend>Preferences</legend>
         <label for="gender">Gender:</label>
-        <select id="gender" name="gender" required>
+        <select id="gender" name="gender" required><br/>
           <option value="">Select...</option>
           <option value="male">Male</option>
           <option value="female">Female</option>
           <option value="other">Other</option>
         </select>
 <br/>        
-        <label>Skills:</label>
-        <input type="checkbox" id="skill1" name="skills" value="html">
-        <label for="skill1">HTML</label>
-        <input type="checkbox" id="skill2" name="skills" value="css">
-        <label for="skill2">CSS</label>
-        <input type="checkbox" id="skill3" name="skills" value="js">
-        <label for="skill3">JavaScript</label>
+        <label>Department:</label><br/>
+        <label>
+        <input type="radio" name="option" 
+               value="option1"> CSE
+    </label>
+
+    <label>
+        <input type="radio" name="option" 
+               value="option2"> EEE
+    </label>
+
+    <label>
+        <input type="radio" name="option" 
+               value="option3"> ECE
+    </label>
       </fieldset>
-  
+  </div>
+    <div class="fields">
       <fieldset class="grid-2 ">
         <legend>Bio</legend>
         <label for="bio">Tell us about yourself:</label>
-        <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+        <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Write Something..."></textarea>
       </fieldset>
-  
-      <div class="buttons">
+  </div>
+      <div class="buttons fields">
         <button type="submit" class="submit-btn" onclick="thank()">Submit Application</button>
         <button type="reset" class="cancel-btn">Cancel</button>
       </div>
@@ -155,7 +100,7 @@
   </main>
   <script>
     function thank(){
-        alert("Thank You !");
+      alert("Thank You !");
     }
 </script>
 </body>
